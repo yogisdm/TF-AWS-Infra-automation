@@ -27,7 +27,7 @@ depends_on = ["module.subnet_creation"]
 
 module "route_creation" {
 source = "./route-table"
-depends_on = ["module.subnet_creation"]
+depends_on = ["module.internet_gateway"]
 }
 
 module "iam_instance_profile" {
