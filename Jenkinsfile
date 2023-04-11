@@ -18,7 +18,7 @@ pipeline {
       }
     }
 	
-    stage('Mediawiki-deploy') {
+    stage('k8s-infra-deploy') {
       steps {
         sh 'terraform apply -input=false -auto-approve'
 	      
